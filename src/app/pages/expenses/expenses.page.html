@@ -1,6 +1,6 @@
-<app-navbar [pageName]="'Expenses'"></app-navbar>
-<ion-content>
-  <ion-list>
+<app-navbar class="blue-bg" [pageName]="'Expenses'"></app-navbar>
+<ion-content class="blue-bg">
+  <ion-list class="blue-bg">
     <ion-item *ngFor="let expenses of expenses; let i = index">
       <ion-label>
         {{i + 1}}
@@ -8,7 +8,7 @@
       <ion-label>{{expenses.description}}</ion-label>
       <ion-icon name="trash-outline" (click)="deleteExpense(expenses)"></ion-icon>
       <ion-icon name="pencil-outline" (click)="goToUpdateExpense(expenses)"></ion-icon>
-      <ion-icon name="arrow-dropright" (click)="goToExpensesDetails(expenses)"></ion-icon>
+      <ion-icon name="arrow-forward" (click)="goToExpensesDetails(expenses)"></ion-icon>
     </ion-item>
    
   </ion-list>

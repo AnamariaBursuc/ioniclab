@@ -5,5 +5,26 @@ app-login {
       align-items: center;
       height: 100%;
     }
+    $colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222
+);
+
+$bluegray-lightgreen: (
+  primary:         #546e7a,
+  secondary:       #76ff03,
+  primary-light:   #819ca9,
+  primary-dark:    #29434e,
+  secondary-light: #b0ff57,
+  secondary-dark:  #32cb00,
+  primary-text:    #ffffff,
+  secondary-text:  #000000
+);
+.blue-bg{
+  background-color: map-get($bluegray-lightgreen, primary);
+}
   }
   

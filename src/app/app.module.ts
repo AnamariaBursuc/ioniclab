@@ -15,13 +15,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddExpensePage } from './pages/add.expense/add.expense.page';
 import { FormsModule } from '@angular/forms';
 import { UpdateExpensePage } from './pages/update.expense/update.expense.page';
+import { DetailedExpensesPage } from './pages/detailed.expenses/detailed.expenses.page';
 
 @NgModule({
   declarations: [
  //components
     AppComponent, NavbarComponent, SideMenuComponent,
 //pages
-  LoginPage, ExpensesPage, AddExpensePage, UpdateExpensePage,
+  LoginPage, ExpensesPage, AddExpensePage, UpdateExpensePage, DetailedExpensesPage
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FormsModule],

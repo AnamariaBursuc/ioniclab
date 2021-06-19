@@ -24,7 +24,7 @@ export class DetailedExpensesPage {
       this.id = params.id;
     });
 
-    this.apiSvc.get(`/api/expenses/${this.id}`).subscribe((response: Expenses) => {
+    this.apiSvc.get(`api/expenses/${this.id}`).subscribe((response: Expenses) => {
       console.log(response);
       this.expenses = response;
     });
