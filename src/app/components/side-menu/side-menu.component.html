@@ -7,8 +7,9 @@
   <ion-content>
     <ion-list>
       <ion-menu-toggle auto-hide="true">
-        <ion-item>My Expenses</ion-item>
-        <ion-item>Log-out</ion-item>
+        <ion-item [routerLink]="'/expenses'">Expenses</ion-item>
+        <ion-item [routerLink]="'/userExpensesLists'">User Expenses</ion-item>
+        <ion-item (click)="logOut()">Log-out</ion-item>
       </ion-menu-toggle>
     </ion-list>
   </ion-content>

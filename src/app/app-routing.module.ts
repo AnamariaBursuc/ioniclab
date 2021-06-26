@@ -5,6 +5,7 @@ import { DetailedExpensesPage } from './pages/detailed.expenses/detailed.expense
 import { ExpensesPage } from './pages/expenses/expenses.page';
 import { LoginPage } from './pages/login/login.page';
 import { UpdateExpensePage } from './pages/update.expense/update.expense.page';
+import { UserExpensesPage } from './pages/user.expenses/user.expenses.page';
 
 const routes: Routes = [
   {
@@ -33,6 +34,11 @@ const routes: Routes = [
     path: 'expenses/:id',
    component: DetailedExpensesPage,
   },
+  {
+    path: 'userExpensesLists',
+   component: UserExpensesPage,
+  },
+
 
 ];
 

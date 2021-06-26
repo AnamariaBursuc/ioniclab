@@ -13,6 +13,7 @@ export class ExpensesPage {
 expenses: Array<Expenses>;
 constructor(private apiSvc: ApiService, private router: Router){}
 
+
 ionViewWillEnter(){
   this.loadExpenses();
 
